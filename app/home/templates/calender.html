@@ -1,0 +1,52 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Calendar {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+
+  <link rel='stylesheet' type="text/css" href="/static/assets/css/fullcalendar.min.css" />
+  <link rel='stylesheet' type="text/css" href="/static/assets/css/fullcalendar.print.min.css" media="print" />
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    <div class="container">
+      <div class="yoo-uikits-heading">
+        <h2 class="yoo-uikits-title">Calendar</h2>
+      </div>
+    </div>
+    <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="yoo-card yoo-style1 yoo-calendar-card">
+            <div class="yoo-card-heading">
+              <div class="yoo-card-heading-left">
+                <h2 class="yoo-card-title">Calendar</h2>
+              </div>
+              <div class="yoo-card-heading-right">
+                <a href="#" class="yoo-btn yoo-add-btn"><ion-icon name="add-outline"></ion-icon>Add New Task</a>
+              </div>
+            </div>
+            <div class="yoo-card-body">
+              <div id="yoo-calendar"></div>
+            </div>
+          </div>
+        </div>
+        <!-- .col -->
+      </div>
+    </div>
+    <div class="yoo-height-b60 yoo-height-lg-b60"></div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/js/moment.min.js"></script>
+  <script src="/static/assets/js/fullcalendar.min.js"></script>
+
+{% endblock javascripts %}

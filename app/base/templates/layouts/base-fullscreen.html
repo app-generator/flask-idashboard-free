@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="YooKits" />
+  <!-- Page Title -->
+  <title>
+    Flask iDashboard Free - {% block title %}{% endblock %} | AppSeed  
+  </title>
+  <!-- Favicon Icon -->
+  <link rel="icon" href="/static/assets/img/favicon.png">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/fontawesome.css" />
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/iDashboard.css" />
+
+    <!-- Specific CSS goes HERE -->
+    {% block stylesheets %}{% endblock stylesheets %}
+
+</head>
+
+<body class="yoo-white-bg">
+  <div class="yoo-login-wrap yoo-style1">
+    <div class="container">
+
+      {% block content %}{% endblock content %}   
+
+    </div>
+  </div>
+
+  {% include 'includes/scripts.html' %}
+
+  <!-- Specific Page JS goes HERE  -->
+  {% block javascripts %}{% endblock javascripts %}
+
+  <script src="/static/assets/js/iDashboard.js"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+</body>
+</html>

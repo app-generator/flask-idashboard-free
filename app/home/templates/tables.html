@@ -1,0 +1,868 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Table {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="yoo-height-b30 yoo-height-lg-b30"></div>
+<div class="container">
+  <div class="yoo-uikits-heading">
+    <h2 class="yoo-uikits-title">Table</h2>
+  </div>
+</div>
+<div class="yoo-height-b30 yoo-height-lg-b30"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">General Table</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#general-table"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="general-table">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">General Table</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;thead&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>First<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Last<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Handle<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Mark<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Otto<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@mdo<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Jacob<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Thornton<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@fat<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Larry<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>the Bird<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@twitter<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">125</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">126</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">127</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Table head options</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#Table-head-options"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="Table-head-options">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Table head options</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;thead</span> <span class="na">class=</span><span class="s">"thead-dark"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>First<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Last<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Handle<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Mark<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Otto<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@mdo<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Jacob<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Thornton<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@fat<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Larry<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>the Bird<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@twitter<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+
+<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;thead</span> <span class="na">class=</span><span class="s">"thead-light"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>First<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Last<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Handle<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Mark<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Otto<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@mdo<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Jacob<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Thornton<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@fat<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Larry<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>the Bird<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@twitter<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">111</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">112</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">113</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">123</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">124</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">125</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Striped rows</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#stripedRows"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="stripedRows">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Striped rows</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;thead&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>First<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Last<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Handle<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Mark<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Otto<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@mdo<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Jacob<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Thornton<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@fat<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Larry<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>the Bird<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@twitter<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">156</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">257</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">358</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Bordered table</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#BorderedTable"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="BorderedTable">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Bordered table</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-bordered"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;thead&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>First<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Last<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Handle<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Mark<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Otto<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@mdo<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Jacob<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Thornton<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@fat<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>Larry the Bird<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@twitter<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">101</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">102</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">103</th>
+                  <td>Jack</td>
+                  <td>Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Borderless table</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#BorderlessTable"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="BorderlessTable">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Borderless table</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-borderless"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;thead&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>First<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Last<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Handle<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Mark<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Otto<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@mdo<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Jacob<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Thornton<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@fat<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>Larry the Bird<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@twitter<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">01</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">02</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">03</th>
+                  <td>Jhon</td>
+                  <td>Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Hoverable rows</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#HoverableRows"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="HoverableRows">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Hoverable rows</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-hover"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;thead&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>First<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Last<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Handle<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Mark<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Otto<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@mdo<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Jacob<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Thornton<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@fat<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>Larry the Bird<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@twitter<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">152</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">156</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">157</th>
+                  <td>Lili</td>
+                  <td>Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Small table</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#Small-table"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="Small-table">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Small table</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-sm"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;thead&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>#<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>First<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Last<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Handle<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/thead&gt;</span>
+<span class="nt">&lt;tbody&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Mark<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Otto<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@mdo<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Jacob<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>Thornton<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@fat<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+  <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/th&gt;</span>
+  <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>Larry the Bird<span class="nt">&lt;/td&gt;</span>
+  <span class="nt">&lt;td&gt;</span>@twitter<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">145</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">123</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">126</th>
+                  <td>Lili</td>
+                  <td>Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Contextual classes</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#Contextual-classes"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="Contextual-classes">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Contextual classes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- On rows --&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-active"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-primary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-secondary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-success"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-danger"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-warning"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-info"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-light"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"table-dark"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+
+<span class="c">&lt;!-- On cells (`td` or `th`) --&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-active"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/td&gt;</span>
+
+<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-primary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-secondary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-success"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-danger"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-warning"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-info"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-light"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-dark"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span></code></pre></figure>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Heading</th>
+                  <th scope="col">Heading</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-primary">
+                  <th scope="row">Primary</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr>
+                  <th scope="row">Default</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-secondary">
+                  <th scope="row">Secondary</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-success">
+                  <th scope="row">Success</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-danger">
+                  <th scope="row">Danger</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">Warning</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-info">
+                  <th scope="row">Info</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-light">
+                  <th scope="row">Light</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr class="table-dark">
+                  <th scope="row">Dark</th>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+
+    </div><!-- .col -->
+  </div>
+</div>
+<div class="yoo-height-b30 yoo-height-lg-b30"></div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

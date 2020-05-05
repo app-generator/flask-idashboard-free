@@ -1,0 +1,101 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Register {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}   
+      
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="yoo-vertical-middle">
+          <div class="yoo-vertical-middle-in">
+            <div class="yoo-signup-img yoo-style1">
+              <img src="/static/assets/img/signup/01.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!-- .col -->
+      <div class="col-lg-5">
+        <div class="yoo-vertical-middle">
+          <div class="yoo-vertical-middle-in">
+            
+            <form method="post" action="" class="yoo-form yoo-style1">
+
+              {{ form.hidden_tag() }}
+
+              <h2 class="yoo-form-title">
+                <a target="_blank"
+                   href="https://appseed.us/admin-dashboards/flask-idashboard-free">Flask iDashboard Free</a>
+              </h2>
+              <div class="yoo-form-subtitle">
+                {% if msg %}
+                    {{ msg | safe }}
+                {% else %}
+                    Add your credentials
+                {% endif %} 
+              </div>
+
+              <div class="yoo-height-b15 yoo-height-lg-b15"></div>
+              <div class="yoo-form-separator"> &nbsp; Register &nbsp; </div>
+              <div class="yoo-height-b15 yoo-height-lg-b15"></div>
+
+              <div class="row">
+                
+                <div class="col-lg-12">
+                  <div class="form-group level-up form-group-md">
+                    <label for="email">Username</label>
+                    {{ form.username(class="form-control") }}
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group level-up form-group-md">
+                    <label for="email">eMail</label>
+                    {{ form.email(class="form-control", type="email") }}
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group level-up form-group-md">
+                    <label for="password">Password</label>
+                    {{ form.password(class="form-control", type="password") }}
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <div class="yoo-forget-pass-wrap">
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="gridCheck">
+                        <label class="custom-control-label" for="gridCheck">
+                          <span class="custom-control-shadow"></span>Agree with terms 
+                        </label>
+                      </div>
+                      <a href={{ url_for('base_blueprint.login') }} class="yoo-form-btn yoo-style2">
+                        Have an account? - Login
+                      </a>
+                    </div>
+                  </div>
+                  <button type="submit" name="register"
+                          class="yoo-form-btn yoo-style1 yoo-color1" class="yoo-form-btn yoo-style2 yoo-type1"><span>Register</span>
+                  </button>
+                  
+                  <br />
+
+                  <div>
+                    &copy; <a href="https://yookits.com/">YooKits</a> - coded by <a href="https://appseed.us">AppSeed</a>. 
+                  <div>
+
+                </div>                
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

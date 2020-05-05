@@ -1,0 +1,335 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} SVG Maps {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/jqvmap.min.css" />
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="yoo-height-b30 yoo-height-lg-b30"></div>
+<div class="container">
+  <div class="yoo-uikits-heading">
+    <h2 class="yoo-uikits-title">Dashboard</h2>
+  </div>
+</div>
+<div class="yoo-height-b30 yoo-height-lg-b30"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">World Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="world-en" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">USA Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="svg-usa" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Algeria Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="dz-fr" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Argentina Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="argentina-en" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Brazil Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="brazil-br" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Croatia Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="croatia-map" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Europe Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="europe-en" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">France Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="france-fr" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Germany Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="germany-en" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Greece Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="greece" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Indonesia Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="indonesia_id" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Iran Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="iran_ir" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Iraq Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="iraq" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Turkey Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="turkey" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+    <div class="col-lg-6">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Ukraine Map</h2>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <div class="yoo-svg-map yoo-style1 yoo-padding-lr30">
+              <div id="ukraine_ua" class="vmap-wrapper yoo-style1"></div>
+            </div>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    </div><!-- .col -->
+  </div>
+</div>
+<div class="yoo-height-b30 yoo-height-lg-b30"></div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/js/svg-maps/jquery.vmap.min.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.usa.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.world.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.algeria.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.argentina.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.brazil.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.europe.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.france.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.germany.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.greece.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.indonesia.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.iran.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.iraq.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.turkey.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.ukraine.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.croatia.js"></script>
+  <script src="/static/assets/js/svg-maps/jquery.vmap.main.js"></script>
+
+{% endblock javascripts %}

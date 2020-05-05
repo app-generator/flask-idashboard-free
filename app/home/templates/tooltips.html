@@ -1,0 +1,121 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Tooltips {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="yoo-height-b30 yoo-height-lg-b30"></div>
+<div class="container">
+  <div class="yoo-uikits-heading">
+    <h2 class="yoo-uikits-title">Tooltips</h2>
+  </div>
+</div>
+<div class="yoo-height-b30 yoo-height-lg-b30"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">General Tooltips</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#general-tooltips"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="general-tooltips">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">General Tooltips</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tooltip on top"</span><span class="nt">&gt;</span>
+Tooltip on top
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Tooltip on right"</span><span class="nt">&gt;</span>
+Tooltip on right
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Tooltip on bottom"</span><span class="nt">&gt;</span>
+Tooltip on bottom
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Tooltip on left"</span><span class="nt">&gt;</span>
+Tooltip on left
+<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <button type="button" class="btn btn-primary mr-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+            <button type="button" class="btn btn-secondary mr-2" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+            <button type="button" class="btn btn-success mr-2" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+            <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+      <div class="yoo-card yoo-style1">
+        <div class="yoo-card-heading">
+          <div class="yoo-card-heading-left">
+            <h2 class="yoo-card-title">Dsabled Tooltips</h2>
+          </div>
+          <div class="yoo-card-heading-right">
+            <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#dsabled-tooltips"><ion-icon name="code"></ion-icon></button>
+            <!-- Code Modal -->
+            <div class="modal fade" id="dsabled-tooltips">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Dsabled Tooltips</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <ion-icon name="close"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block"</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">title=</span><span class="s">"Disabled tooltip"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">style=</span><span class="s">"pointer-events: none;"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="yoo-card-body">
+          <div class="yoo-padd-lr-20">
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip">
+              <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+            </span>
+            <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+          </div>
+        </div>
+      </div><!-- .yoo-card -->
+      <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+
+    </div><!-- .col -->
+  </div>
+</div>
+<div class="yoo-height-b30 yoo-height-lg-b30"></div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
