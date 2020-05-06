@@ -1,6 +1,6 @@
 # [Flask iDashboard Free](https://appseed.us/admin-dashboards/flask-idashboard-free)
 
-**Open-Source Admin Dashboard** coded in **Flask Framework** on top of **Datta Able** design (free version) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+**Open-Source Admin Dashboard** coded in **Flask Framework** on top of **[iDashboard - iOS design system](https://yookits.com/product/idashboard-ios-admin-dashboard-template/)** design (free version) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
 
 <br />
 
@@ -18,7 +18,7 @@ This product is **built based on community feedback**. Feel free (anonymously) t
 - Session-Based authentication (via **flask_login**)
 - Forms validation
 - Deployment scripts: Docker, Gunicorn / Nginx
-- UI Kit: **iDashboard Free** (Lite Version) provided by **YooKits**
+- UI Kit: **[iDashboard Free](https://yookits.com/product/idashboard-ios-admin-dashboard-template/)** (Lite Version) provided by **[YooKits](https://yookits.com)**
 - **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) License**
 - Support: Free support via **Github** and (Paid) **24/7 LIVE Support** via [Discord](https://discord.gg/fZC6hup)
 
