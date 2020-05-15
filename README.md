@@ -6,17 +6,18 @@
 - Alembic (DB schema migrations)
 - Modular design with **Blueprints**
 - Session-Based authentication (via **flask_login**)
-- Forms validation
 - Deployment scripts: Docker, Gunicorn / Nginx
-- UI Kit: **[iDashboard Free](https://yookits.com/product/idashboard-ios-admin-dashboard-template/)** (Lite Version) provided by **[YooKits](https://yookits.com)**
+- UI Kit: **iDashboard** (Lite Version) provided by **YooKits**
 - **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) License**
-- Support: Free support via **Github** and (Paid) **24/7 LIVE Support** via [Discord](https://discord.gg/fZC6hup)
-
+- Free support via **Github** 
+- Paid Support **24/7 LIVE Support** via [Discord](https://discord.gg/fZC6hup)
 
 > Links
 
 - [Flask iDashboard Free](https://appseed.us/admin-dashboards/flask-idashboard-free) - Product page
 - [Flask iDashboard Free](https://flask-idashboard-free.appseed.us/login) - LIVE demo
+- More [Flask Admin Dashboards](https://appseed.us/admin-dashboards/flask) - index hosted by **AppSeed**
+- [Free Admin Dashboards](https://appseed.us/admin-dashboards/open-source) - index hosted by **AppSeed**
 
 <br />
 
