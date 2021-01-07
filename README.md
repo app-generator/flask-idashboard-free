@@ -21,6 +21,7 @@ iDashboard is a free, lightweight admin dashboard template that’s built on top
 
 - [Flask iDashboard](https://appseed.us/admin-dashboards/flask-idashboard-free) - Product page
 - [Flask iDashboard Demo](https://flask-idashboard-free.appseed.us/login) - LIVE demo
+- [Flask Tutorial](https://github.com/app-generator/tutorial-flask) - Getting started with Flask
 
 <br />
 
